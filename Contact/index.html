@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="This is the contact page" content="">
+  <link rel="stylesheet" href="/Styles/main.css">
+  <title>Contact Page</title>
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+    integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lora&family=Playfair+Display&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../Styles/main.css">
+
+  <script>
+    window.addEventListener("DOMContentLoaded", () => {
+      document.querySelector(".menu-icon").addEventListener("click", () => {
+        document.querySelector(".main-menu").classList.toggle("menu-show");
+      });
+    });
+  </script>
+</head>
+
+<body>
+  <header class="main-menu">
+    <div class="menu-icon">
+      <svg viewbox="0 0 60 60" width="60px" height="60px">
+        <line x1="5%" y1="50%" x2="95%" y2="50%" />
+        <line x1="5%" y1="50%" x2="95%" y2="50%" />
+      </svg>
+    </div>
+    <nav>
+      <ul>
+        <li><a href="../">Home</a></li>
+        <li><a href="../About/">About</a></li>
+        <li><a>Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <h1>Contact</h1>
+  <section>
+    <h2>Contact Form</h2>
+    <form>
+      <label for="name">Full name:</label>
+
+      <input type="text" name="name" id="name">
+
+      <label for="email">Email address:</label>
+      <input type="email" name="email" id="email" required>
+
+      <label for="phone">Phone number:</label>
+      <input type="tel" name="phone" id="phone">
+
+      <label for="month">Your favorite month:</label>
+      <input type="month" name="month" id="month">
+
+      <fieldset>
+        <legend>Which are natural wonders of the world that you would like to explore? <em>(Check all that apply)</em>
+        </legend>
+
+        <input type="checkbox" id="Everest" name="Wonders" value="Everest">
+        <label for="Everest">Everest</label>
+
+        <input type="checkbox" id="borealis" name="Wonders" value="borealis">
+        <label for="borealis">Aurora Borealis</label>
+
+        <input type="checkbox" id="Grand-Canyon" name="Wonders" value="Grand-Canyon">
+        <label for="Grand-Canyon">Grand Canyon</label>
+
+        <input type="checkbox" id="Waterfall" name="Wonders" value="Waterfall">
+        <label for="Waterfall">Water Fall</label>
+
+      </fieldset>
+
+      <fieldset>
+        <legend>What region of the world is your favorite?</legend>
+
+        <input type="radio" name="region" id="North" value="North">
+        <label for="North">North America</label>
+
+        <input type="radio" name="region" id="Africa" value="Africa">
+        <label for="Africa">Africa</label>
+
+        <input type="radio" name="region" id="South" value="South">
+        <label for="South">South America</label>
+
+        <input type="radio" name="region" id="Europe" value="Europe">
+        <label for="Europe">Europe</label>
+      </fieldset>
+
+      <label for="haiku">Compose a haiku about nature:</label>
+      <textarea name="haiku" id="haiku" rows="10" placeholder="5/7/5 syllable count"></textarea>
+
+      <button>Submit Now</button>
+
+    </form>
+  </section>
+
+
+
+</body>
+
+</html>
