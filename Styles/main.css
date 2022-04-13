@@ -279,6 +279,7 @@ a:focus {
   display: flex;
   align-items: center;
   justify-content: center;
+
 }
 
 video {
@@ -299,9 +300,10 @@ video {
 
 .hero .overlay {
   position: relative;
-  z-index: 20;
+  z-index: 25;
   text-align: center;
   color: white;
+
 }
 .hero .text-group {
   position: relative;
@@ -323,6 +325,7 @@ video {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  pointer-events: none;
 }
 
 .cards {
@@ -479,6 +482,8 @@ aside p {
     flex-wrap: wrap;
   }
   .panel {
+    display: flex;
+    gap: 2rem;
     flex-direction: row;
   }
   .panel .image-wrapper {
@@ -527,7 +532,7 @@ fieldset {
   grid-column-gap: 1rem;
 }
 
-/* legend is not considered a child of fieldset and may not render in the grid */
+
 legend {
   line-height: 1.2;
   grid-column: span 2;
